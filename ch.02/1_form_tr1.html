@@ -14,6 +14,9 @@
 		th, td {
 			padding: 10px;
 		}
+		#aa {
+			background:rgb(226, 226, 228);  text-align: center;		
+		}
 	</style>
 </head>
 
@@ -22,11 +25,11 @@
 <form method="get" action="./result.html">
 	<table width="60%">
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔이름</b></td>
+			<td id="aa"><b>✔이름</b></td>
 			<td><input type="text" name="id"></td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔아이디</b></td>
+			<td id="aa"><b>✔아이디</b></td>
 			<td>
 				<input type="text" name="id"  placeholder="ID">
 				<input type="button" value="✔아이디 중복 확인">
@@ -34,7 +37,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center">
+			<td id="aa">
 				<b>✔비밀번호</b>
 			</td>
 			<td>
@@ -43,11 +46,11 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔비밀번호확인</b></td>
+			<td id="aa"><b>✔비밀번호확인</b></td>
 			<td><input type="password" name="checking"  autocomplete="off" placeholder="비밀번호 확인">	</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔이메일</b></td>
+			<td id="aa"><b>✔이메일</b></td>
 			<td>
 				<input type="text" name="email">@<input type="text" name="emailaddress">
 				<select name="메일주소">
@@ -60,7 +63,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔연락처</b></td>
+			<td id="aa"><b>✔연락처</b></td>
 			<td>휴대전화
 				<select name="cellnumber">
 					<option value="선택">선택			
@@ -83,49 +86,49 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔우편번호</b></td>
+			<td id="aa"><b>✔우편번호</b></td>
 			<td><input type="text"><input type="button" id="btnsabe" value="주소검색"></td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔주소</b>
+			<td id="aa"><b>✔주소</b>
 			</td>
 			<td>	<input type="text" name="address" " style="width:700px";>
 				<br><input type="text" name="address" " style="width:700px";>
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>정보수신여부</b></td>
+			<td id="aa"><b>정보수신여부</b></td>
 			<td>서비스 및 이벤트 소식을 <input type="checkbox" name="1" >e-mail로 수신하겠습니다. <input type="checkbox" name="1">SMS로 수신하겠습니다.
 		</tr>	
 	</table>
 	<h3>작가정보</h3>
 	<table width="60%">
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔프로필 이미지</b>
+			<td id="aa"><b>✔프로필 이미지</b>
 			</td>
 			<td><input type="file" name="file">
 			</td>
 		</tr>
 		<tr> 
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔필명</b>
+			<td id="aa"><b>✔필명</b>
 			</td>
 			<td><input type="text" name="name">
 					<br><i style="color:#964b00">*필명이 없으신 분들은 실명을 등록해주시기 바랍니다.(작가정보에 노출 될 이름입니다.)</i>
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>대표작</b></td>
+			<td id="aa"><b>대표작</b></td>
 			<td><input type="text" name="work" style="width:900px";></td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔수상내역</b>
+			<td id="aa"><b>✔수상내역</b>
 			</td>
 			<td><input type="text" name="award" style="width:900px;height:200px";>
 				<br><i style="color:#964b00">여러 수상내역 등록 시 콤마(.)로 구분하여 등록해 주시기 바랍니다.</i>
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔주요작품</b>
+			<td id="aa"><b>✔주요작품</b>
 			</td>
 			<td><input type="text" name="masterpiece" style="width:320px";> 
 				<input type="text" name="id" style="width:320px";>
@@ -136,21 +139,26 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center">
+			<td id="aa">
 				<b>작가정보공개설정</b>
 			</td>
-			<td><input type="radio" name="route">공개
+			<td>
+				<input type="radio" name="route">공개
 				<input type="radio" name="route">비공개
 			</td>
 	</table>
 	<table width="60%">
-	<h3>이용자정보 입력</h3>
+<h3>이용자정보 입력
+	<input type="submit" value="저장" align="center">	
+	<input type="submit" value="삭제" align="center">
+</h3>
+
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔소속(회사)</b></td>
+			<td id="aa"><b>✔소속(회사)</b></td>
 			<td><input type="text" name="id" style="width:200px";></td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center">
+			<td id="aa">
 				<b>사업자 등록번호</b>
 			</td>
 			<td><input type="text" name="id" style="width:150px";>-
@@ -159,7 +167,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center">
+			<td id="aa">
 				<b>✔사업자등록증(첨부)</b>
 			</td>
 			<td><input type="file" name="file">
@@ -167,7 +175,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center">
+			<td id="aa">
 				<b>✔분야</b>
 			</td>
 			<td><input type="radio" name="route">영화
@@ -181,7 +189,7 @@
 			</td>
 	 	</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>✔직종</b>
+			<td id="aa"><b>✔직종</b>
 			</td>
 			<td><input type="radio" name="home">제작자
 				<input type="radio" name="home">투자자
@@ -190,7 +198,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td style="background:rgb(226, 226, 228);" align="center"><b>주요경력</b>
+			<td id="aa"><b>주요경력</b>
 			</td>
 			<td><strong>주요경력사항을 등록해 주시기 바랍니다.</strong>
 				<br><i><mark>(기간,사업내용,담당업무를 입력해 주시기 바랍니다.)</mark></i>
