@@ -5,9 +5,9 @@
 	<meta name="viewport" content="width=devide-width, initial=scale=1.0">
 	<title></title>
 	<style type="text/css">
-		table, th, td {
+			table, th, td {
 			border: 1px solid black;
-			border-collapse: separate;
+			border-collapse: collapse;
 		}
 		
 		th, td {
@@ -19,12 +19,8 @@
 		background-color: maroon;
 		color: white;
 	}
-		.input1 {
-			width: 300px;
-			height: 50px;
-			background-color: maroon;
-			color: white;
-					}
+	
+
 	</style>
 	
 </head>
@@ -39,18 +35,23 @@
 			<td style="background:rgb(128, 255, 255);" align="center">경력구분</td>
 			<td align="center">신입</td>
 			<td style="background:rgb(128, 255, 255);" align="center">희망연봉</td>
-			<td align="center">회사 내규에 따름</td>			
+			<td align="center">회사 내규에 따름</td>
+				
+			
 		</tr>
 	</table>
 	<br>
 	<h4>기본정보</h4>
 	<table width="100%">
 		<tr>
-			<td width="300px" rowspan="6" align="center">사진</td>
+			<td width="300px" rowspan="6" align="center">
+				<img alt="pic" src="./image/aaa.jpg" width="230px;">
+			</td>
 			<td style="background:rgb(128, 255, 255);" align="center">성명</td>
 			<td align="center"></td>
 			<td style="background:rgb(128, 255, 255);" align="center">한문</td>
-			<td align="center"></td>			
+			<td align="center"></td>
+			
 		</tr>
 		<tr>
 			<td style="background:rgb(128, 255, 255);" align="center">영문</td>
@@ -162,10 +163,9 @@
 				<td height="50px" align="center"></td>
 				<td height="50px" align="center"></td>
 			</tr>
-		</table>
-			<input type="submit" class="input1">
-			<input type="button" value="뒤로가기" onclick="history.back(-1);" class="input1">
-			
+		</table>			
+		<input type="submit" class="input1">
+		<input type="button" value="뒤로가기" onclick="history.back(-1);" class="input1">
 	</form>	
 </body>
 </html>
