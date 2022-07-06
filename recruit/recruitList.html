@@ -19,7 +19,8 @@
 			font-style: oblique;
 		}	
 		tr {
-			border-top: 1px solid black; border-bottom: 1px solid black;			
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;			
 		}
 		th, td {
 			padding: 10px;
@@ -37,19 +38,21 @@
 		}
 	    .row:hover {
 	     background-color: lightgreen; 
-	     }
-
-					
+	    }	
+	    .input1 {
+		width: 300px;
+		height: 50px;
+		background-color: lime;
+		color: gray;
+		font-size: 20px;
+	}				
 	</style>
 </head>
-
-<body style="background-image: url('./image/abcdf.png'); background-size: 100%;">
-
-	
+<body style="background-image: url('./image/123a.jpg'); background-size: 100%;">
+	<form method="get" action="./recruitView4.html">
 	<caption align="center">
 		<img src="./image/asds.png" width="50px">지원자 정보
 	</caption>
-
 	<table width="100%">
 		<tr bgcolor="lightyellow" >
 			<th width="70px">합격자 선 택</th>
@@ -222,7 +225,8 @@
 		</tr>		
 	</table>
 	<br>
-	<input type="button" value="뒤로가기" onclick="history.back(-1);" class="input1">
+	<input type="submit" value="지원서 작성하기" class="input1">
+	</form>
 	
 </body>
 </html>

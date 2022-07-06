@@ -4,105 +4,32 @@
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=devide-width, initial=scale=1.0">
 	<title></title>
-	<style type="text/css">
-	
-		table, th, td {
-			border: 1px groove black;
-			margin: 50px;
-
+	<style>
+		.nav {
+			height:100px;
+			margin-left: 20px;
+			display: flex;
+			border-bottom: 1px solid black;
+			align-items: center;
 		}
-		
-		th, td {
-			padding: 10px; 
+		.nav-right-items {
+			margin-left: auto;
+			display: flex;
 		}
-		#aa {
-			background:rgb(226, 226, 228);  text-align: center;		
-		}
-		h3 {
-			text-align: left;
-			margin: 50px;
+		.nav-item{
+			font-size: 20px;	
 		}
 	</style>
-</head>
+</head>	
 
 <body>
-<h3>회원가입</h3>
-	<form method="get" action="./result.html">
-		<table width="60%">
-			<tr>
-				<td id="aa"><b>✔이름</b></td>
-				<td><input type="text" name="id"></td>
-			</tr>
-			<tr>
-				<td id="aa"><b>✔아이디</b></td>
-				<td>
-					<input type="text" name="id"  placeholder="ID">
-					<input type="button" value="✔아이디 중복 확인">
-					<br><i style="color:#964b00">＊6~16까지 영문자(소문자),숫자 사용 가능합니다.</i> 
-				</td>
-			</tr>
-			<tr>
-				<td id="aa">
-					<b>✔비밀번호</b>
-				</td>
-				<td>
-					<input type="password" name="password" autocomplete="off"  placeholder="PW"><br>
-					<i style="color:#964b00">＊6~16자까지 영문자(대소문자),숫자 및 특수문자 사용 가능합니다<br>3자리 연속 또는 같은 문자,아이디는 사용할 수 없습니다</i>
-				</td>
-			</tr>
-			<tr>
-				<td id="aa"><b>✔비밀번호확인</b></td>
-				<td><input type="password" name="checking"  autocomplete="off" placeholder="비밀번호 확인">	</td>
-			</tr>
-			<tr>
-				<td id="aa"><b>✔이메일</b></td>
-				<td>
-					<input type="text" name="email">@<input type="text" name="emailaddress">
-					<select name="메일주소">
-						<option value="직접입력">직접입력
-						<option value="naver.com">naver.com
-						<option value="google.com">google.com
-						<option value="daum.net">daum.net
-						<option value="hanmil.com">hanmil.com
-					</secect>
-				</td>
-			</tr>
-			<tr>
-				<td id="aa"><b>✔연락처</b></td>
-				<td>휴대전화
-					<select name="cellnumber">
-						<option value="선택">선택			
-						<option value="010">010
-						<option value="017">011
-						<option value="017">017
-						<option value="018">018
-					</selct>
-						<input type="text">-<input type="text">
-					<br>일반전화
-					<select name="mail">
-						<option value="선택">선택
-						<option value="02">02
-						<option value="031">031
-						<option value="032">032
-						<option value="052">052
-						<input type="text">-<input type="text">
-					</slelect>
-					<h5><mark>*연락처는 둘 중 하나만 입력해도 됩니다.</mark></h5>
-				</td>
-			</tr>
-			<tr>
-				<td id="aa"><b>✔우편번호</b></td>
-				<td><input type="text"><input type="button" id="btnsabe" value="주소검색"></td>
-			</tr>
-			<tr>
-				<td id="aa"><b>✔주소</b>
-				</td>
-				<td>	<input type="text" name="address" " style="width:700px";>
-					<br><input type="text" name="address" " style="width:700px";>
-				</td>
-			</tr>
-			<tr>
-				<td id="aa"><b>정보수신여부</b></td>
-				<td>서비스 및 이벤트 소식을 <input type="checkbox" name="1" >e-mail로 수신하겠습니다. <input type="checkbox" name="1">SMS로 수신하겠습니다.
-			</tr>	
-		</table>
+	<div class="nav"
+		<div class="nav-right-items">
+			<div class="nav-item">메뉴1</div>
+			<div class="nav-item">메뉴2</div>
+			<div class="nav-item">메뉴3</div>
+			<div class="nav-item">메뉴4</div>
+		</div>
+	</div>
+</body>
+</html>
