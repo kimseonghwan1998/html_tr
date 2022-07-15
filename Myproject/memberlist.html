@@ -40,7 +40,6 @@
 			font-size: 50px;
 			margin-left: 10px;
 			font-weight: 20px;
-			font-family: 'Black And White Picture', sans-serif;
 			font-family: 'Nanum Pen Script', cursive;
 		}
 		.mainlogo{
@@ -86,9 +85,6 @@
 	   		display:flex;
 	   		height: 500px;
 	   }
-	   .pull-right{
-	   		margin-left: 760px;
-	   }
 	   .hov:hover{
 	   		color:#58FA82;
 	   }
@@ -107,8 +103,13 @@
 	   }
 	   .reset{
 	   	margin-left: 500px;
-	   	font-size: 20px;
-	   	color: #FA5882
+	   	font-size: 20px;;
+	   }
+	   .reset1{
+	  	 background-color: #FA5882;
+	   }
+	   .reset2{
+	   	background-color: #FF0040;
 	   }
 	   .resetfile{
 	   	display: flex;
@@ -117,12 +118,28 @@
 	   	margin-left: 900px;
 	   	font-size: 20px;
 	   }
+	   .file1{
+	   	background-color: #2EFEF7;
+	   }
+	   .file2{
+	    background-color: #2EFEF7;
+	   }
 	   .trhead{
 	   	background-color: #D8D8D8;
 	   }
-	   .wrap{
-	   	background-image: url('../image/run5.jpg');
+	   .right-item{
+	    display:flex;
+	   	margin-left: auto;
+	    flex-direction: column;
 	   }
+	   .right-item1{
+	   	margin-left: 300px;
+	   }
+	   .logout{
+	   	font-family: 'Song Myung', serif;
+	   	color: red;
+	   }
+ @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
   </style>
  </head>
@@ -133,7 +150,7 @@
  	<div class="nav">
 		<div class="logo" >
 			<span class="mainlogo">
-			<i class="fa-solid fa-person-running"></i>Runday
+			<i class="fa-solid fa-person-running">Runday</i>
 			</span>
 		</div>
 		<div class="center-item">
@@ -143,10 +160,19 @@
 			<div class="nav-item">코스추천</div>
 			<div class="nav-item">러닝크루</div>
 		</div>
+		<div class="right-item">
+			<div class="right-item1">
+				<i class="fa-solid fa-user">김승환님</i>
+				<h3 class="logout"> &nbsp;로그아웃</h3>
+			</div>
+		</div>
 	</div>
+	
+	<div>
 		<h2 style="text-align: center;" class="title">
-		<i class="fa-solid fa-bars"></i>회원 정보 보기
+		<i class="fa-solid fa-bars">회원정보보기</i>
 		</h2>
+	</div>
 	</div>
 	<div class="list">
  		<table class="type04">
@@ -155,31 +181,31 @@
 	 				<input type="checkbox" onclick='selectAll(this)'/>
  				</th>
 				<th width="100px">
-				<i class="fa-solid fa-ellipsis-vertical">회원번호</i>
+					<i class="fa-solid fa-ellipsis-vertical">회원번호</i>
 				</th>
 				<th width="50px">
-				<i class="fa-solid fa-mars-and-venus">성별</i>
+					<i class="fa-solid fa-mars-and-venus">성별</i>
 				</th>
 				<th width="100px">
-				<i class="fa-solid fa-user">이름</i>
+					<i class="fa-solid fa-user">이름</i>
 				</th>
 				<th width="100px">
-				<i class="fa-solid fa-envelope">이메일</i>
+					<i class="fa-solid fa-envelope">이메일</i>
 				</th>
 				<th width="300px">
-				<i class="fa-solid fa-mobile">전화번호</i>			
+					<i class="fa-solid fa-mobile">전화번호</i>			
 				</th>
 				<th>
-				<i class="fa-solid fa-address-card">회원주소</i>				
+					<i class="fa-solid fa-address-card">회원주소</i>				
 				</th>
 				<th width="300px">
-				<i class="fa-solid fa-calendar">가입일</i>
+					<i class="fa-solid fa-calendar">가입일</i>
 				</th>	
 				<td width="300px">
-				<i class="fa-solid fa-calendar-check">최근접속일</i>
+					<i class="fa-solid fa-calendar-check">최근접속일</i>
 				</th>
 				<th width="100px">
-				<i class="fa-solid fa-gem">회원등급</i>
+					<i class="fa-solid fa-gem">회원등급</i>
 				</th>		
 			</tr>
 			<tr class="hov">
@@ -386,12 +412,18 @@
 </div>
 <div class="resetfile">
 	<div class="reset">
-		<input type="reset" value="삭제" class="reset1">
-		<input type="reset" value="삭제" class="reset2">
+		<button type="reset" value="삭제" class="reset1">
+			<i class="fa-solid fa-trash">삭제</i>
+		</button>
+		<button type="reset" value="삭제" class="reset2">
+			<i class="fa-solid fa-trash-arrow-up">전체삭제</i>
+		</button>
 	</div>
 	<div class="file">
-		<input type="submit" value="엑셀" class="file1">
-		<input type="submit" value="추가" class="file2">		
+		<button type="submit" value="엑셀" class="file1">엑셀</button>
+		<button type="submit" value="추가" class="file2">	
+			<i class="fa-solid fa-plus">추가</i>
+		</button>
 	</div>
 </div>
 	<!--부트스트랩페이징 end  -->
