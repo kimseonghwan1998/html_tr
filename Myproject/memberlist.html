@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Bootstrap demo</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Nanum+Gothic:wght@800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+  crossorigin="anonymous">
+  <style>
+  		.nav{
+			height: 70px;
+			border-bottom: 1px solid gray;
+			display: flex;
+			background-color: #FBF7F2;
+
+		}
+		.center-item{
+			display:flex;
+			margin-left: 20%;
+			align-items: center;
+			font-family: 'Black And White Picture', sans-serif;
+			font-family: 'Black Han Sans', sans-serif;
+			font-family: 'Nanum Gothic', sans-serif;
+			font-family: 'Nanum Pen Script', cursive;
+
+		}
+		.nav-item{
+			margin-left:30px;
+			font-size: 30px;
+			margin: auto;
+			margin-left: 30px;
+		}
+		.logo{
+			align-items: center;
+			font-size: 50px;
+			margin-left: 10px;
+			font-weight: 20px;
+			font-family: 'Black And White Picture', sans-serif;
+			font-family: 'Nanum Pen Script', cursive;
+		}
+		.mainlogo{
+			color: black;
+			font-weight:bold;
+			margin-left: 20px;
+		}		
+		.right-item{
+			margin-left: auto;
+			display: flex;
+			align-items: center;
+			font-size:25px;
+		}
+		.nav-right-item{
+			margin-left: 20px;
+			margin-top: auto;
+		}
+		table.type04 {
+		  border-collapse: separate;
+		  border-spacing: 1px;
+		  text-align: left;
+		  line-height: 1.5;
+		  border-top: 1px solid #ccc;
+		  margin-top: 50px;
+		}
+		table.type04 th {
+		  width: 50px;
+		  padding: 5px;
+		  font-weight: bold;
+		  vertical-align: top;
+		  border-bottom: 1px solid #ccc;
+		}
+		table.type04 td {
+		  width: 150px;
+		  padding: 5px;
+		  vertical-align: top;
+		  border-bottom: 1px solid #ccc;
+		}			   
+	   .list{
+	   		text-align: center;
+	   		justify-content: center;
+	   		align-items: center;
+	   		display:flex;
+	   		height: 500px;
+	   }
+	   .pull-right{
+	   		margin-left: 760px;
+	   }
+	   .hov:hover{
+	   		color:#58FA82;
+	   }
+	   tr{
+	   	text-align: center;
+	   }
+	   .title{
+	   	font-family: 'Song Myung', serif;
+	   }
+	   .wrap{
+	   	background-image: url('../image/run5.jpg');
+	   }
+	   .paging{
+	   	margin-left: 820px;
+	   	margin-top: 40px;
+	   }
+	   .reset{
+	   	margin-left: 500px;
+	   	font-size: 20px;
+	   	color: #FA5882
+	   }
+	   .resetfile{
+	   	display: flex;
+	   }
+	   .file{
+	   	margin-left: 900px;
+	   	font-size: 20px;
+	   }
+	   .trhead{
+	   	background-color: #D8D8D8;
+	   }
+	   .wrap{
+	   	background-image: url('../image/run5.jpg');
+	   }
+ @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+  </style>
+ </head>
+ <body>
+ <!-- start  -->
+ <form>
+ <div class="wrap">
+ 	<div class="nav">
+		<div class="logo" >
+			<span class="mainlogo">
+			<i class="fa-solid fa-person-running"></i>Runday
+			</span>
+		</div>
+		<div class="center-item">
+			<div class="nav-item">회사소개</div>
+			<div class="nav-item">고객센터</div>
+			<div class="nav-item">주행거리</div>
+			<div class="nav-item">코스추천</div>
+			<div class="nav-item">러닝크루</div>
+		</div>
+	</div>
+		<h2 style="text-align: center;" class="title">
+		<i class="fa-solid fa-bars"></i>회원 정보 보기
+		</h2>
+	</div>
+	<div class="list">
+ 		<table class="type04">
+	 		<tr class="trhead">
+	 			<th width="40px">
+	 				<input type="checkbox" onclick='selectAll(this)'/>
+ 				</th>
+				<th width="100px">
+				<i class="fa-solid fa-ellipsis-vertical">회원번호</i>
+				</th>
+				<th width="50px">
+				<i class="fa-solid fa-mars-and-venus">성별</i>
+				</th>
+				<th width="100px">
+				<i class="fa-solid fa-user">이름</i>
+				</th>
+				<th width="100px">
+				<i class="fa-solid fa-envelope">이메일</i>
+				</th>
+				<th width="300px">
+				<i class="fa-solid fa-mobile">전화번호</i>			
+				</th>
+				<th>
+				<i class="fa-solid fa-address-card">회원주소</i>				
+				</th>
+				<th width="300px">
+				<i class="fa-solid fa-calendar">가입일</i>
+				</th>	
+				<td width="300px">
+				<i class="fa-solid fa-calendar-check">최근접속일</i>
+				</th>
+				<th width="100px">
+				<i class="fa-solid fa-gem">회원등급</i>
+				</th>		
+			</tr>
+			<tr class="hov">
+	 			<td>
+	 				<input type="checkbox" name="user">
+ 				</td>
+				<td>77891</td>
+				<td>남</td>
+				<td>김승환</td>
+				<td>fjscu112@naver.com</td>
+				<td>010-7615-5041
+				<td>서울시 동작구</td>
+				<td>2021.10.9</td>
+				<td>2022.06.26</td>
+				<td>플레티넘</td>				
+			</tr>
+			<tr class="hov">
+	 			<td>
+	 				<input type="checkbox" name="user">
+ 				</td>
+				<td>77513</td>
+				<td>여</td>
+				<td>박재상</td>
+				<td>wotkd123@naver.com</td>
+				<td>010-4567-1234
+				<td>경기도 화성시
+				<td>2020.04.15</td>
+				<td>2021.12.29</td>
+				<td>골드</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>74356</td>
+				<td>남</td>
+				<td>이재용</td>
+				<td>gd88@naver.com</td>
+				<td>010-1589-4527</td>
+				<td>서울시 강서구
+				<td>2019.06.23</td>
+				<td>2022.06.27</td>
+				<td>실버</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>56248</td>
+				<td>여</td>
+				<td>호날두</td>
+				<td>ronaldo7@naver.com</td>
+				<td>010-7264-8241</td>
+				<td>대전시 서구
+				<td>2018.05.21</td>
+				<td>2022.06.21</td>
+				<td>골드</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>12876</td>
+				<td>남</td>
+				<td>메시</td>
+				<td>messi10@naver.com</td>
+				<td>010-4898-1278</td>
+				<td>울산시 동구
+				<td>2020.11.21</td>
+				<td>2022.06.27</td>
+				<td>골드</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>56721</td>
+				<td>여</td>
+				<td>김연아</td>
+				<td>yunakim@naver.com</td>
+				<td>010-6498-1848</td>
+				<td>서울시 광진구</td>
+				<td>2017.06.19</td>
+				<td>2022.06.12</td>
+				<td>플레티넘</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>82649</td>
+				<td>남</td>
+				<td>김승민</td>
+				<td>tmdalsdl88@naver.com</td>
+				<td>010-9258-7358</td>
+				<td>서울시 성북구
+				<td>2021.08.3</td>
+				<td>2022.06.26</td>
+				<td>브론즈</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>26754</td>
+				<td>남</td>
+				<td>최하늘</td>
+				<td>skychoi1023@naver.com</td>
+				<td>010-8812-9435</td>
+				<td>강원도 강릉시
+				<td>2015.02.1</td>
+				<td>2018.05.29</td>
+				<td>브론즈</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>67243</td>
+				<td>여</td>
+				<td>김지민</td>
+				<td>jimin2@naver.com</td>
+				<td>010-6748-1598</td>
+				<td>부산시 서구
+				<td>2019.11.30</td>
+				<td>2022.06.25</td>
+				<td>플레티넘</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>75876</td>
+				<td>여</td>
+				<td>박미래</td>
+				<td>miraepark00@naver.com</td>
+				<td>010-9123-4128</td>
+				<td>광주시 북구</td>		
+				<td>2019.01.23</td>
+				<td>2022.06.26</td>
+				<td>플레티넘</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>12876</td>
+				<td>남</td>
+				<td>손흥민</td>
+				<td>messi10@naver.com</td>
+				<td>010-7158-4537</td>
+				<td>서울시 서초구
+				<td>2020.1.3</td>
+				<td>2022.06.24</td>
+				<td>플레티넘</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>35943</td>
+				<td>남</td>
+				<td>정영준</td>
+				<td>dfdfjun13523@naver.com</td>
+				<td>010-7618-9342</td>
+				<td>강원도 원주시
+				<td>2021.11.3</td>
+				<td>2022.06.26</td>
+				<td>플레티넘</td>
+			</tr>
+			<tr  class="hov">
+	 			<td>
+	 				<input type="checkbox">
+ 				</td>
+				<td>12876</td>
+				<td>남</td>
+				<td>박민수</td>
+				<td>minsoo98@naver.com</td>
+				<td>010-5671-1528</td>
+				<td>서울시 구로구
+				<td>2018.09.23</td>
+				<td>2022.12.27</td>
+				<td>실버</td>
+			</tr>
+		</table>
+ 	</div>
+ <div>		
+ 	<!--부트스트랩 페이징  -->
+	<nav aria-label="..." class="paging">
+	  <ul class="pagination">
+	    <li class="page-item disabled">
+	      <span class="page-link">Previous</span>
+	    </li>
+	    <li class="page-item"><a class="page-link" href="#">1</a></li>
+	    <li class="page-item active" aria-current="page">
+	      <span class="page-link">2</span>
+	    </li>
+	    <li class="page-item"><a class="page-link" href="#">3</a></li>
+	    <li class="page-item">
+	      <a class="page-link" href="#">Next</a>
+	    </li>
+	  </ul>
+	</nav>
+</div>
+<div class="resetfile">
+	<div class="reset">
+		<input type="reset" value="삭제" class="reset1">
+		<input type="reset" value="삭제" class="reset2">
+	</div>
+	<div class="file">
+		<input type="submit" value="엑셀" class="file1">
+		<input type="submit" value="추가" class="file2">		
+	</div>
+</div>
+	<!--부트스트랩페이징 end  -->
+ 	<div class="find">
+	 	<form method="post" name="search" action="">
+				<table class="pull-right">
+					<tr>
+						<td>
+							<select class="form-control" name="searchField">
+								<option value="0">선택</option>
+								<option value="number">회원번호</option>
+								<option value="gender">성별</option>
+								<option value="username">이름</option>
+								<option value="useremail">이메일</option>
+								<option value="usernumber">전화번호</option>
+								<option value="useraddress">회원주소<option>
+								<option value="userbirth">가입일</option>
+								<option value="userlogin">최근접속일</option>
+								<option value="userclass">회원등급</option>
+							</select>
+						</td>
+						<td>
+							<input type="text" class="form-control"
+							placeholder="검색어 입력" name="searchText" maxlength="100">
+						</td>
+						<td>
+							<button type="submit" class="btn btn-success">검색</button>
+						</td>
+					</tr>
+				</table>
+		</form>
+ </div>
+ </form> 
+  <!-- end  -->
+  <script>
+  function selectAll(selectAll)  {
+  const checkboxes 
+     = document.querySelectorAll('input[type="checkbox"]');
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked
+  })
+}
+  </script>
+  <script src="https://kit.fontawesome.com/0e2ca97461.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+ </body>
+</html>
