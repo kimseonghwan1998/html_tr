@@ -3,145 +3,122 @@
 <head>
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=devide-width, initial=scale=1.0">
-	<title>Runday</title>
-	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-	  rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
-	  crossorigin="anonymous">
-	  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Nanum+Gothic:wght@800&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	<title></title>
 	<style>
-		.nav{
-			height: 70px;
-			border-bottom: 1px solid gray;
-			display: flex;
-			background-color: #FBF7F2;
-
+	@font-face{
+	 font-family: abster;
+	 src:url(font/abster-webfont.woff) format('woff');
+	}
+		*{
+		 margin: 0;
+		 padding: 0;
+		 box-sizing: border-box;
 		}
-		.center-item{
-			display:flex;
-			margin-left: 20%;
-			align-items: center;
-			font-family: 'Black And White Picture', sans-serif;
-			font-family: 'Black Han Sans', sans-serif;
-			font-family: 'Nanum Gothic', sans-serif;
-			font-family: 'Nanum Pen Script', cursive;
-
+		.container{
+		 width: 100%;
+		 height: 100vh;
+		 background: url('../image/run5.jpg');
+		 opacity: 0.9;
 		}
-		.nav-item{
-			margin-left:30px;
-			font-size: 30px;
-			margin: auto;
-			margin-left: 30px;
+		
+		.container .header{
+		 width:80%;
+		 height: 80px;
+		 margin: 0 auto;
+		 display: flex;
+		 justify-content: space-between;
+		 align-items: center;
 		}
-		.logo{
-			align-items: center;
-			font-size: 50px;
-			margin-left: 10px;
-			font-weight: 20px;
-			font-family: 'Nanum Pen Script', cursive;
+		.container .header h1 a{
+		 text-decoration: none;
+		 color: white;
+		 font-family: abster;
 		}
-		.mainlogo{
-			color: black;
-			font-weight:bold;
-			margin-left: 20px;
-		}		
-		.right-item{
-			margin-left: auto;
-			display: flex;
-			align-items: center;
-			font-size:25px;
+		.container .nav ul li{
+			display: inline-block;
+			margin: 0 10px;
 		}
-		.nav-right-item{
-			margin-left: 20px;
-			margin-top: auto;
+		.container .nav ul li a{
+			text-decoration: none;
+			color: #FAFAFA;
+			font-size: 20px;
 		}
-		.picture{
-			margin-left: 50px;
+		.container .nav ul li a:hover{
+			color: #1fdfdf;
+		}
+		.container .hero{
+			position: absolute;
+			left:50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			color:white;
+			text-align: center;
+			font-family: verdana, Geneva, Tahoma, sans-serif;
+		}
+		.container .hero h2{
+			font-size: 60px;
+			margin-bottom: 20px;
+		}
+		.container .hero p{
+			font-size: 22px;
+		}
+		.container .hero button{
+			background: none;
+			border: 2px solid darkseagreen;
+			color: white;
+			padding:15px 20px;
+			border-radius: 20px;
 			margin-top: 30px;
+			outline: none;
+			cursor: pointer;
+			transition: all .4s;
 		}
-		.text{
-			font-size:70px;
-			margin-left: 300px;
-			font-family: 'Black And White Picture', sans-serif;
-			font-family: 'Nanum Pen Script', cursive;
-			line-height: 50px;
+		
+		.container .hero button:hover{
+			background-color: darkslategray;
 		}
-		.store{
-			font-size:30px;
-			display:flex;
-			margin-left: 270px;
-		}
-		.storeNav{
-			margin-left: 50px;
-		}
-		.maintext{
-			height: 350px;
-		}
-	@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Nanum+Pen+Script&display=swap');
 
-	
+
 	</style>
-	<script src="https://kit.fontawesome.com/0e2ca97461.js" crossorigin="anonymous"></script>
-</head>	
+</head>
 
 <body>
-<div class="nav">
-	<div class="logo" >
-		<span class="mainlogo">
-		<i class="fa-solid fa-person-running">Run day</i>
-		</span>
-	</div>
-	<div class="center-item">
-		<div class="nav-item">회사소개</div>
-		<div class="nav-item">고객센터</div>
-		<div class="nav-item">주행거리</div>
-		<div class="nav-item">코스추천</div>
-		<div class="nav-item">러닝크루</div>
-	</div>
-	<div class="right-item">
-		<div class="nav-right-item">로그인</div>
-		<div class="nav-right-item">회원가입</div>
-	</div>
-</div>
-<div class="main">
-	<div class="main-text">
-<!-- 부트스트랩 carousel 1548 639 -->
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner" style="width: 100%; height: 550px;" >
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="../image/run1.jpg" class="d-block w-100" alt="run">
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="../image/run2.jpg" class="d-block w-100" alt="run1">
-    </div>
-    <div class="carousel-item">
-      <img src="../image/run3.jpg" class="d-block w-100" alt="run2">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-	<!-- 부트스트랩 carousel 여기까지  -->
-<div class="maintext" style="background-color: #FBF7F2;">
-	<div class="text">러닝의 모든 것</div>
-	<div class="text">런데이에서 간편하게</div><br>	
-	<div class="store">
-		<div class="storeNav">
-			<i class="fa-brands fa-apple"> App Store</i>
-		</div>
-		<div class="storeNav">
-		<i class="fa-brands fa-google-play"> Google play</i>		
+<div class="container">
+	<div class="header">
+		<h1><a href="#">Runday</a></h1>
+		<div class="nav">
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">주행거리</a></li>
+				<li><a href="#">코스추천</a></li>
+				<li><a href="#">러닝크루</a></li>
+			</ul>
 		</div>
 	</div>
+	<div class="hero">
+		<h2>러닝의 모든 것</h2>
+		<h2>런데이에서 간편하게</h2>
+		<button>
+			<h2><i class="fa-brands fa-apple">
+					<a href="https://apps.apple.com/kr/app/runday/id1042937618">App store</a>
+				</i>
+			</h2>
+		</button>
+		<button>
+			<h2><i class="fa-brands fa-google-play">
+					<a href="https://play.google.com/store/games?
+					utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-kr>
+					-1003227-med-hasem-py-Evergreen-Oct0121
+					-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700058439273394
+					_creativeid_477192597332_device_c&gclid=EAIaIQobChMI
+					_JavlJyB-QIVFh4rCh3SJwjJEAAYASAAEgLqQ_D_BwE&gclsrc=aw.ds">Google Play</a>
+				</i></h2>
+		</button>
+	</div>
 </div>
+
 <script src="https://kit.fontawesome.com/0e2ca97461.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
+
 </html>
