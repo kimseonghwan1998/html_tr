@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=devide-width, initial=scale=1.0">
 	<title></title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
- rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
- crossorigin="anonymous">
+		  rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+ 		  crossorigin="anonymous">
 	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 	@font-face{
 	 font-family: abster;
 	 src:url(font/abster-webfont.woff) format('woff');
@@ -20,16 +21,15 @@
 		}
 		.container-fluid{
 		 width: 100%;
-		 height: 100vh;
-		 background: linear-gradient(rgba(47, 254, 213, 0.1),rgba(47, 254, 213, 0.1)), url('../image/run6.jpg');
-		 opacity: 0.9;
+		 height: 120vh;
+		 background: linear-gradient(rgba(255, 251, 240, 0.75),rgba(255, 251, 240, 0.75)), url('../image/run6.jpg');
+		 opacity: 0.7;
 		}		
 		.container-fluid .header{
 		 width:80%;
 		 height: 80px;
 		 margin: 0 auto;
 		 display: flex;
-		 justify-content: space-between;
 		 align-items: center;
 		}
 		.container-fluid .header h1 a{
@@ -43,8 +43,9 @@
 		}
 		.container-fluid .nav ul li a{
 			text-decoration: none;
-			color:#8000FF;
+			color:black ;;
 			font-size: 20px;
+			font-family: 'Black Han Sans', sans-serif;
 		}
 		.container-fluid .nav ul li a:hover{
 			color: #1fdfdf;
@@ -109,13 +110,18 @@
 	   		height: 500px;
 	   }
 	   .hov:hover{
-	   		color:#58FA82;
+	   		color:#58FA82;	   		
+	   }
+	   .hov{
+	   	color:black;
+	   	font-weight: bold;
 	   }
 	   tr{
 	   	text-align: center;
 	   }
 	   .fontcolor{
 	   	color: #5858FA;
+	   	margin-left: 100px;
 	   }
 	   .paging{
 	   	margin-top: 50px;
@@ -131,9 +137,13 @@
 		.file{
 		margin-left: 800px;
 		}
-		.find{
-		margin-left: 500px;
+		.pull-right{
+		margin-left: 400px;
 		}
+		.canvus{
+		margin-left: auto;
+		}
+
 	</style>
 </head>
 <body>
@@ -149,8 +159,66 @@
 				<li><a href="#">러닝크루</a></li>
 			</ul>
 		</div>
+		<!-- 부트스트랩  -->
+		<div class="canvus">
+		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">로그인 정보</button>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  		<div class="offcanvas-header">
+   		 <h5 id="offcanvasRightLabel">
+   			 <h2><a href="#">내정보보기</a></h2>
+   		 	<h2><a href="#">로그아웃</a></h2>
+   		 </h5>
+   		 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  		</div>
+  		<div class="offcanvas-body">
+  		</div>
+ 
+  </div>
+</div>
 	</div>
-	<div class="user"><h2>회원정보</h2></div>
+	<div class="user">
+		<h2>
+			<i class="fa-solid fa-list-check">회원정보</i>
+		</h2>
+	</div>
+		<table class="pull-right">
+				<td>
+					<input type="text" class="form-control"
+					placeholder="회원번호" name="searchText" maxlength="100">
+				</td>
+				<td>
+					<input type="text" class="form-control"
+					placeholder="성별" name="searchText" maxlength="100">
+				</td>
+				<td>
+					<input type="text" class="form-control"
+					placeholder="이름" name="searchText" maxlength="100">
+				</td>
+				<td>
+					<input type="text" class="form-control"
+					placeholder="이메일" name="searchText" maxlength="100">
+				</td>
+				<td>
+					<button type="submit" class="btn btn-success">검색</button>
+				</td>						
+				</tr>
+				<td>
+					<input type="text" class="form-control"
+					placeholder="전화번호" name="searchText" maxlength="100">
+				</td>
+				<td>
+					<input type="text" class="form-control"
+					placeholder="회원주소" name="searchText" maxlength="100">
+				</td>
+				<td>
+					<input type="text" class="form-control"
+					placeholder="가입일" name="searchText" maxlength="100">
+				</td>
+				<td>
+					<input type="text" class="form-control"
+					placeholder="회원등급" name="searchText" maxlength="100">
+				</td>						
+		</table>
 	<!--리스트 -->
 	<div class="list">
  		<table class="type04">
@@ -405,47 +473,6 @@
 	</div>
 </div>
 	<!--부트스트랩페이징 end  -->
- 	<div class="find">
-	 	<form method="post" name="search" action="">
-				<table class="pull-right">
-						<td>
-							<input type="text" class="form-control"
-							placeholder="검색어 입력" name="searchText" maxlength="100">
-						</td>
-						<td>
-							<input type="text" class="form-control"
-							placeholder="검색어 입력" name="searchText" maxlength="100">
-						</td>
-						<td>
-							<input type="text" class="form-control"
-							placeholder="검색어 입력" name="searchText" maxlength="100">
-						</td>
-						<td>
-							<input type="text" class="form-control"
-							placeholder="검색어 입력" name="searchText" maxlength="100">
-						</td>
-						<td>
-							<button type="submit" class="btn btn-success">검색</button>
-						</td>						
-					</tr>
-					<td>
-							<input type="text" class="form-control"
-							placeholder="검색어 입력" name="searchText" maxlength="100">
-						</td>
-						<td>
-							<input type="text" class="form-control"
-							placeholder="검색어 입력" name="searchText" maxlength="100">
-						</td>
-						<td>
-							<input type="text" class="form-control"
-							placeholder="검색어 입력" name="searchText" maxlength="100">
-						</td>
-						<td>
-							<input type="text" class="form-control"
-							placeholder="검색어 입력" name="searchText" maxlength="100">
-						</td>
-				</table>
-		</form>
  </div>
  </form> 
   <!-- end  -->
