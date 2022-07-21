@@ -10,43 +10,71 @@
 	<style>
 	@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
-		*{
-		 margin: 0;
-		 padding: 0;
-		 box-sizing: border-box; 
-		}
-		.container-fluid{
-		 width: 100%;
-		 height: 120vh;
-		 background: linear-gradient(rgba(255, 251, 240, 0.75),rgba(255, 251, 240, 0.75));
-		 opacity: 0.7;
-		 flex-wrap:wrap;
-		}		
-		.container-fluid .header{
-		 width:80%;
-		 height: 80px;
-		 margin: 0 auto;
-		 display: flex;
-		 align-items: center;
-		}
-		.container-fluid .header h1 a{
-		 text-decoration: none;
-		 color: white;
-		 font-family: abster;
-		}
-		.container-fluid .nav ul li{
-			display: inline-block;
-			margin: 0 10px;
-		}
-		.container-fluid .nav ul li a{
-			text-decoration: none;
-			color:black ;;
-			font-size: 20px;
-			font-family: 'Black Han Sans', sans-serif;
-		}
-		.container-fluid .nav ul li a:hover{
-			color: #1fdfdf;
-		}
+	@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+		  body{
+            margin:0;
+            height: 100vh;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #263343;
+            padding:8px 12px;
+        }
+        .navbar_logo{
+            font-size: 24px;
+            color:white;
+        }
+        .navbar_logo i{
+            color: white;
+        }
+        .navbar_menu{
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+        .navbar_menu li{
+            padding: 8px 12px;
+             margin-top: 10px;
+        }
+        .navbar_menu li:hover{
+            background-color: #d49466;
+            border-radius: 4px;
+        }
+        .navbar_icons{
+            list-style: none;
+            color: white;
+            display: flex;
+            padding-left: 0;    
+        }
+        .navbar_icons li{
+            padding: 8px 12px;
+        }
+@media screen and (max-width:768px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center;
+        width:100%;    
+    }
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+    .navbar_icons{
+        justify-content: center;
+        width:100%;
+    }
+}
 		.container-fluid .hero{
 			position: absolute;
 			left:50%;
@@ -82,59 +110,72 @@
 		}
 		.my{
 			margin-left: 800px;
-		}
-
-		
-		.mainimage{
-			width: 730px;
-			margin-left: 500px;
-			margin-top:20px;
-		}
+		}		
 		.write{
 			margin-left: 550px;
-			margin-top: 100px;
 		}
 		.write > .run{
 			font-size: 50px;
 		}
+		.img img{
+			margin-left: 200px;
+		}
+		.proverb span{
+			font-family: 'Rubik Moonrocks', cursive;
+		}
 		</style>
 </head>
 <body>
-<div class="container-fluid">
-	<div class="header">
-		<h1><a href="#" style="color: green; font-weight: bold;">
-			<i class="fa-solid fa-person-running">Runday</i></a></h1>
-		<div class="nav">
-			<ul class="fontcolor">
-				<li><a href="#">통계</a></li>
-				<li><a href="#">회원정보</a></li>
-				<li><a href="#">크루모집관리</a></li>
-				<li><a href="#">게시판관리</a></li>
-			</ul>
-		</div>
-	<!-- 부트스트랩 -->
-	<div class="canvus my">
-		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">MY</button>
-		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-  		<div class="offcanvas-header">
-   		 <h5 id="offcanvasRightLabel">
-   			 <h2><a href="#">내정보보기</a></h2>
-   		 	<h2><a href="#">로그아웃</a></h2>
-   		 </h5>
-   		 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  		</div>
-  		<div class="offcanvas-body">
-  		</div>
-  		</div>
+		<nav class="navbar">
+	    <div class="navbar_logo">
+	        <a href=""><i class="fa-brands fa-artstation">RunDay</i></a>
+	    </div>
+	    <ul class="navbar_menu">
+	        <li><a href="Custom_center.html">CustomerCenter</a></li>
+	        <li><a href="">RunMileage</a></li>
+	        <li><a href="">RunCourse</a></li>
+	        <li><a href="">RunCrew</a></li>
+	        <li><a href="">Board</a></li>
+	    </ul>
+	    <ul class="navbar_icons">
+	    	<li><a href="Login.html">Login</a></li>
+	    	<li><a href="SignUp.html">Sign Up</a></li>
+		<!--부트스트랩  -->
+	</nav>
 	</div>
+	</div>
+	<div class="content">
+		<div class="img">
+			<img alt="" src="../image/runimage5.png">
+			<img alt="" src="../image/runimage1.png">
+			<img alt="" src="../image/runimage6.png">
+		</div>
+		<div class="proverb">
+			<span>Nothing can be so amusingly arrogant as a young man who has just discovered an old idea and thinks it is his own. -Sidney J. Harris</span>
+			<span>The ultimate measure of a person is not where they stand in moments of comfort and convenience, but where they
+				   stand in times of challenge and controversy.-Martin Luther King Jr.
+			</span>
+			<span>Only passions, great passions, can elevate the soul to great things.-Denis Diderot</span>
+			<span>I think the prime reason for existence, for living in this world, is discovery.-James Dean</span>>
+			<span>Do the one thing you think you cannot do. Fail at it.
+			 	  Try again. Do better the second time.
+		 		  The only people who never tumble are those who never mount the high wire.
+			  	  This is your moment. Own it.
+		  	 </span>
+			<span>It is easier to exclude harmful passions than to rule them, and to deny them admittance than to control them after they have been admitted.-Seneca</span>>
+			<span>Believe me: the secret for harvesting from existence the greatest fruitfulness and greatest enjoyment is - to live dangerously.-Friedrich Nietzsche</span>
+			<span>Men of genius do not excel in any profession because they labor in it, but they labor in it because they excel.-William Hazlitt</span>
+			<span>I know of no more encouraging fact than the unquestioned ability of a man to elevate his life by conscious endeavor.-Henry David Thoreau</span>
+			<span>Attempt easy tasks as if they were difficult,
+				  and difficult as if they were easy; in the one case that confidence may not fall asleep, in the other that it may not be dismayed.-Baltasar Gracian
+			 </span>
+			<span>The more things a man is ashamed of, the more respectable he is.-George Bernard Shaw</span>
+		</div>
 
 	</div>
-	<div class="image">
-		<img alt="run" src="../image/run7.jpg" class="mainimage">
-	</div>
 	<div class="write">
-		<h2 style="font-family: 'Gamja Flower', cursive;" class="run">러닝의 모든 것</h2>
-		<h2 style="font-family: 'Gamja Flower', cursive;" class="run">런데이에서 간편하게</h2>
+		<h2 style="font-family: 'Gamja Flower', cursive;" class="run">Everything about running</h2>
+		<h2 style="font-family: 'Gamja Flower', cursive;" class="run">It's a simple RUN DAY</h2>
 		<button>
 			<h2><i class="fa-brands fa-apple">
 					<a href="https://apps.apple.com/kr/app/runday/id1042937618" target='_blank'>App store</a>

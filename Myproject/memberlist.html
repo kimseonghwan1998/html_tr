@@ -14,43 +14,49 @@
 	 src:url(font/abster-webfont.woff) format('woff');
 	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
 	}
-		*{
-		 margin: 0;
-		 padding: 0;
-		 box-sizing: border-box; 
-		}
-		.container-fluid{
-		 width: 100%;
-		 height: 120vh;
-		 background: linear-gradient(rgba(255, 251, 240, 0.75),rgba(255, 251, 240, 0.75));
-		 opacity: 0.7;
-		 flex-wrap:wrap;
-		}		
-		.container-fluid .header{
-		 width:80%;
-		 height: 80px;
-		 margin: 0 auto;
-		 display: flex;
-		 align-items: center;
-		}
-		.container-fluid .header h1 a{
-		 text-decoration: none;
-		 color: white;
-		 font-family: abster;
-		}
-		.container-fluid .nav ul li{
-			display: inline-block;
-			margin: 0 10px;
-		}
-		.container-fluid .nav ul li a{
-			text-decoration: none;
-			color:black ;;
-			font-size: 20px;
-			font-family: 'Black Han Sans', sans-serif;
-		}
-		.container-fluid .nav ul li a:hover{
-			color: #1fdfdf;
-		}
+		 body{
+            margin:0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #263343;
+            padding:8px 12px;
+        }
+        .navbar_logo{
+            font-size: 24px;
+            color:white;
+        }
+        .navbar_logo i{
+            color: white;
+        }
+        .navbar_menu{
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+        .navbar_menu li{
+            padding: 8px 12px;
+             margin-top: 10px;
+        }
+        .navbar_menu li:hover{
+            background-color: #d49466;
+            border-radius: 4px;
+        }
+        .navbar_icons{
+            list-style: none;
+            color: white;
+            display: flex;
+            padding-left: 0;    
+        }
+        .navbar_icons li{
+            padding: 8px 12px;
+        }
 		.container-fluid .hero{
 			position: absolute;
 			left:50%;
@@ -168,23 +174,24 @@
 		margin-left: 200px;
 		height: 400px;
 		}
-		/*부트스트랩 시작  */
-		
-		/*부트스트랩 끝  */
+		.navbar_menu{
+		margin-left: 687px;
+		}
 	</style>
 </head>
 <body>
-<div class="container-fluid">
-	<div class="header">
-		<h1><a href="#" style="color: green; font-weight: bold;">Runday</a></h1>
-		<div class="nav">
-			<ul class="fontcolor">
-				<li><a href="#">통계</a></li>
-				<li><a href="#">회원정보</a></li>
-				<li><a href="#">크루모집관리</a></li>
-				<li><a href="#">게시판관리</a></li>
-			</ul>
-		</div>
+	<nav class="navbar">
+	    <div class="navbar_logo">
+	        <a href=""><i class="fa-brands fa-artstation">RunDay</i></a>
+	    </div>
+	    <ul class="navbar_menu">
+	        <li><a href="">통계</a></li>
+	        <li><a href="">회원정보</a></li>
+	        <li><a href="">크루모집관리</a></li>
+	        <li><a href="">게시판관리</a></li>
+	    </ul>
+	    <ul class="navbar_icons">
+    	</ul>
 		<!-- 부트스트랩  -->
 		<div class="canvus">
 		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">MY</button>
@@ -198,6 +205,7 @@
   		</div>
   		<div class="offcanvas-body">
   		</div>
+  		</nav>
   </div>
 </div>
 </div>
