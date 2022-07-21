@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=devide-width, initial=scale=1.0">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+		  rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
+ 		  crossorigin="anonymous">
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+		*{
+		 margin: 0;
+		 padding: 0;
+		 box-sizing: border-box; 
+		}
+		.container-fluid{
+		 width: 100%;
+		 height: 120vh;
+		 background: linear-gradient(rgba(255, 251, 240, 0.75),rgba(255, 251, 240, 0.75));
+		 opacity: 0.7;
+		 flex-wrap:wrap;
+		}		
+		.container-fluid .header{
+		 width:80%;
+		 height: 80px;
+		 margin: 0 auto;
+		 display: flex;
+		 align-items: center;
+		}
+		.container-fluid .header h1 a{
+		 text-decoration: none;
+		 color: white;
+		 font-family: abster;
+		}
+		.container-fluid .nav ul li{
+			display: inline-block;
+			margin: 0 10px;
+		}
+		.container-fluid .nav ul li a{
+			text-decoration: none;
+			color:black ;;
+			font-size: 20px;
+			font-family: 'Black Han Sans', sans-serif;
+		}
+		.container-fluid .nav ul li a:hover{
+			color: #1fdfdf;
+		}
+		.container-fluid .hero{
+			position: absolute;
+			left:50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			color:white;
+			text-align: center;
+			font-family: verdana, Geneva, Tahoma, sans-serif;
+		}
+		.container-fluid .hero h2{
+			font-size: 60px;
+			margin-bottom: 20px;
+		}
+		.container-fluid .hero p{
+			font-size: 22px;
+		}
+		.container-fluid .hero button{
+			background: none;
+			border: 2px solid darkseagreen;
+			color: white;
+			padding:15px 20px;
+			border-radius: 20px;
+			margin-top: 30px;
+			outline: none;
+			cursor: pointer;
+			transition: all .4s;
+		}		
+		.container-fluid .hero button:hover{
+			background-color: darkslategray;
+		}
+		.logo{
+			font-family: 'Dancing Script', cursive;
+		}
+		.my{
+			margin-left: 800px;
+		}
+
+		
+		.mainimage{
+			width: 730px;
+			margin-left: 500px;
+			margin-top:20px;
+		}
+		.write{
+			margin-left: 550px;
+			margin-top: 100px;
+		}
+		.write > .run{
+			font-size: 50px;
+		}
+		</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="header">
+		<h1><a href="#" style="color: green; font-weight: bold;">
+			<i class="fa-solid fa-person-running">Runday</i></a></h1>
+		<div class="nav">
+			<ul class="fontcolor">
+				<li><a href="#">통계</a></li>
+				<li><a href="#">회원정보</a></li>
+				<li><a href="#">크루모집관리</a></li>
+				<li><a href="#">게시판관리</a></li>
+			</ul>
+		</div>
+	<!-- 부트스트랩 -->
+	<div class="canvus my">
+		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">MY</button>
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  		<div class="offcanvas-header">
+   		 <h5 id="offcanvasRightLabel">
+   			 <h2><a href="#">내정보보기</a></h2>
+   		 	<h2><a href="#">로그아웃</a></h2>
+   		 </h5>
+   		 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  		</div>
+  		<div class="offcanvas-body">
+  		</div>
+  		</div>
+	</div>
+
+	</div>
+	<div class="image">
+		<img alt="run" src="../image/run7.jpg" class="mainimage">
+	</div>
+	<div class="write">
+		<h2 style="font-family: 'Gamja Flower', cursive;" class="run">러닝의 모든 것</h2>
+		<h2 style="font-family: 'Gamja Flower', cursive;" class="run">런데이에서 간편하게</h2>
+		<button>
+			<h2><i class="fa-brands fa-apple">
+					<a href="https://apps.apple.com/kr/app/runday/id1042937618" target='_blank'>App store</a>
+				</i>
+			</h2>
+		</button>
+		<button>
+			<h2><i class="fa-brands fa-google-play">
+					<a href=https://play.google.com/store/apps/details?id=com.hanbit.rundayfree&hl=ko&gl=US target='_blank'>Google Play</a>
+				</i></h2>
+		</button>
+	</div>
+</div>
+
+ <script src="https://kit.fontawesome.com/0e2ca97461.js" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+ </script>
+</body>
+</html>

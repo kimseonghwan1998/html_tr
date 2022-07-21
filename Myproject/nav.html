@@ -9,6 +9,12 @@
  		  crossorigin="anonymous">
 	<style>
 	@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+	@font-face{
+	 font-family: abster;
+	 src:url(font/abster-webfont.woff) format('woff');
+	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+	}
 		  body{
             margin:0;
         }
@@ -28,7 +34,7 @@
             color:white;
         }
         .navbar_logo i{
-            color: silver;
+            color: white;
         }
         .navbar_menu{
             display: flex;
@@ -37,6 +43,7 @@
         }
         .navbar_menu li{
             padding: 8px 12px;
+             margin-top: 10px;
         }
         .navbar_menu li:hover{
             background-color: #d49466;
@@ -71,50 +78,16 @@
         width:100%;
     }
 }
-		.container-fluid .hero{
-			position: absolute;
-			left:50%;
-			top: 50%;
-			transform: translate(-50%,-50%);
-			color:white;
-			text-align: center;
-		}
-		.container-fluid .hero h2{
-			font-size: 60px;
-			margin-bottom: 20px;
-		}
-		.container-fluid .hero p{
-			font-size: 22px;
-		}
-		.container-fluid .hero button{
-			background: none;
-			border: 2px solid darkseagreen;
-			color: white;
-			padding:15px 20px;
-			border-radius: 20px;
-			margin-top: 30px;
-			outline: none;
-			cursor: pointer;
-			transition: all .4s;
-		}		
-		.container-fluid .hero button:hover{
-			background-color: darkslategray;
-		}
-		.logo{
-			font-family: 'Dancing Script', cursive;
-		}
 		.my{
 			margin-left: auto;
-			align-items: center;
 		}
-
 		</style>
 </head>
 <body>
 <div class="wrap">
 	<nav class="navbar">
 	    <div class="navbar_logo">
-	        <a href="">RunDay</a>
+	        <a href=""><i class="fa-brands fa-artstation">RunDay</i></a>
 	    </div>
 	    <ul class="navbar_menu">
 	        <li><a href="">통계</a></li>
@@ -124,7 +97,7 @@
 	    </ul>
 	    <ul class="navbar_icons">
 		<!--부트스트랩  -->
-		<div class="canvus my">
+		<div class="canvus navbar_icons">
 			<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">MY</button>
 			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 	  		<div class="offcanvas-header">
