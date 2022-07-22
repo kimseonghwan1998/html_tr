@@ -113,7 +113,7 @@
 	   		align-items: flex-start;
 	   		display:flex;
 	   		height: 300px;
-
+	   		margin-top: 70px;
 	   }
 	   .hov:hover{
 	   		color:#58FA82;	   		
@@ -177,19 +177,64 @@
 		.navbar_menu{
 		margin-left: 687px;
 		}
+		.list-table-body {
+		cursor: pointer;
+		}
+		.list-table-body:hover {
+		background-color: white;
+		}
+		.user span{
+		font-size: 30px;
+		font-weight: bold;
+		}
+		.content{
+		width: 100%;
+		height: 100px;
+		}
+		.menu ul li{
+		list-style: none;
+		margin-top: 70px;
+		}
 	</style>
 </head>
 <body>
 	<nav class="navbar">
-	    <div class="navbar_logo">
-	        <a href=""><i class="fa-brands fa-artstation">RunDay</i></a>
-	    </div>
-	    <ul class="navbar_menu">
-	        <li><a href="">통계</a></li>
-	        <li><a href="">회원정보</a></li>
-	        <li><a href="">크루모집관리</a></li>
-	        <li><a href="">게시판관리</a></li>
-	    </ul>
+    <div class="navbar_logo">
+	        <!-- 오픈캔버스 -->
+		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" 
+		style="background-color: #263343; border-color: #263343;">
+			<i class="fa-brands fa-artstation">RunDay</i>
+		</button>
+		
+		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: #263343;">
+			  <div class="offcanvas-header">
+			    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+			   		<i class="fa-brands fa-vaadin">관리자 메뉴</i>
+			    </h5>
+			    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			  </div>
+			  <div class="menu">
+			  	 <ul>
+			        <li><a href="">
+			        	<i class="fa-solid fa-1">.통계</i>
+			        	</a>
+		        	</li>
+			        <li><a href="">
+			       <i class="fa-solid fa-2">.회원정보</i>
+			       		</a>
+		       		</li>
+			        <li><a href=""><i class="fa-solid fa-3">.크루모집관리</i>
+			        </a></li>
+			        <li><a href="">
+			        <i class="fa-solid fa-4">.게시판관리</i></a></li>
+			    </ul>
+			  </div>
+		  <div class="offcanvas-body">
+			    <div>			      
+			    </div>
+		  </div>
+		</div>
+	</div>	  
 	    <ul class="navbar_icons">
     	</ul>
 		<!-- 부트스트랩  -->
@@ -230,12 +275,12 @@
 	</ul>
 	</div>
 <!--부트스트랩 end  -->
-
 	<div class="user">
-		<h2>
+		<span style="background-color: #263343;; color: white;">
 			<i class="fa-solid fa-list-check">회원정보</i>
-		</h2>
+		</span>
 	</div>
+	<div class="content">
 		<table class="pull-right">
 				<td>
 					<input type="text" class="form-control"
@@ -276,10 +321,10 @@
 				<td>
 					<button type="reset">
 						<img alt="reset" src="../image/reset1.png" width="20px">
-					</button>						
+					</button>	
+				</td>				
 		</table>
-		<img alt="run" src="../image/run6.jpg" class="img">
-	
+	</div>
 	<!--리스트 -->
 <!-- 아코디언 시작  -->
 
@@ -289,7 +334,7 @@
 	<div class="list">
 	
  		<table class="type04">
-	 		<tr class="trhead">
+	 		<tr class=" trhead" style="background-color: #D8D8D8;">
 	 			<th width="40px">
 	 				<input type="checkbox" onclick='selectAll(this)'/>
  				</th>
@@ -321,7 +366,7 @@
 					<i class="fa-solid fa-gem">회원등급</i>
 				</th>		
 			</tr>
-			<tr class="hov">
+			<tr  onclick="location.href='./modform.html'" class="list-table-body hov">
 	 			<td>
 	 				<input type="checkbox" name="user">
  				</td>
@@ -334,9 +379,8 @@
 				<td>2021.10.9</td>
 				<td>2022.06.26</td>
 				<td>플레티넘</td>				
-			</tr>
-			<tr class="hov">
-			<tr  class="hov">
+			</tr>   
+			<tr onclick="location.href='./recruitView2.html'" class="list-table-body hov">
 	 			<td>
 	 				<input type="checkbox">
  				</td>
@@ -350,7 +394,7 @@
 				<td>2022.06.27</td>
 				<td>실버</td>
 			</tr>
-			<tr  class="hov">
+			<tr onclick="location.href='./recruitView2.html'" class="list-table-body hov">
 	 			<td>
 	 				<input type="checkbox">
  				</td>
@@ -364,7 +408,7 @@
 				<td>2022.06.21</td>
 				<td>골드</td>
 			</tr>
-			<tr  class="hov">
+			<tr onclick="location.href='./recruitView2.html'" class="list-table-body hov">
 	 			<td>
 	 				<input type="checkbox">
  				</td>
@@ -378,7 +422,7 @@
 				<td>2022.06.27</td>
 				<td>골드</td>
 			</tr>
-			<tr  class="hov">
+			<tr onclick="location.href='./recruitView2.html'" class="list-table-body hov">
 	 			<td>
 	 				<input type="checkbox">
  				</td>
@@ -392,7 +436,7 @@
 				<td>2022.06.12</td>
 				<td>플레티넘</td>
 			</tr>
-			<tr  class="hov">
+			<tr onclick="location.href='./recruitView2.html'" class="list-table-body hov">
 	 			<td>
 	 				<input type="checkbox">
  				</td>
@@ -406,7 +450,7 @@
 				<td>2022.06.25</td>
 				<td>플레티넘</td>
 			</tr>
-			<tr class="hov">
+			<tr onclick="location.href='./recruitView2.html'" class="list-table-body hov">
 	 			<td>
 	 				<input type="checkbox">
  				</td>
@@ -441,17 +485,38 @@
 	  </ul>
 	</nav>
 </div>
-<div class="resetfile">
+	<div class="resetfile">
 	<div class="reset">
-		<button type="reset" value="삭제" class="reset1">
-			<i class="fa-solid fa-trash">삭제</i>
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" 
+		style="background-color: white; color: red; border-color: red; margin-left: 200px;">
+ 		 <i class="fa-solid fa-trash-can">삭제</i>
 		</button>
-		<button type="reset" value="삭제" class="reset2">
-			<i class="fa-solid fa-trash-arrow-up">전체삭제</i>
-		</button>
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">삭제</h5>
+		        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		      </div>
+		      <div class="modal-body">
+		        정말로 삭제하시겠습니까?
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+		        <button type="button" class="btn btn-primary">삭제</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!--부트스트랩 모달  -->
+		<!-- Button trigger modal -->
 	</div>
 	<div class="file">
-		<button type="submit" value="엑셀" class="file1">엑셀</button>
+		<button type="submit" value="엑셀" class="file1">
+		<i class="fa-solid fa-file-excel">엑셀</i>
+		</button>
 		<button type="submit" value="추가" class="file2">	
 			<a href="RegForm.html"><i class="fa-solid fa-plus">추가</i></a>
 		</button>
