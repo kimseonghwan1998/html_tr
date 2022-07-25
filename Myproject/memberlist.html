@@ -52,8 +52,15 @@
             list-style: none;
             color: white;
             display: flex;
-            padding-left: 0;    
+            justify-content: center;
+            align-items:center;
+            margin-left: 550px;
         }
+		 .navbar_icons li a{
+		 	margin-left: 40px;
+		 	font-size: 20px;
+		 	font-weight: bold;
+		 }
         .navbar_icons li{
             padding: 8px 12px;
         }
@@ -193,8 +200,26 @@
 		}
 		.menu ul li{
 		list-style: none;
-		margin-top: 70px;
+		margin-top: 150px;
 		}
+		.offcanvas-header{
+		background-color: #424242;
+		}
+		.offcanvas-body{
+		background-color: #263343;
+		}
+		.offcanvas-body h2 a{
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+		.offcanvas-body h2 a{
+		margin-top: 40px;
+		}
+		
+		/*마우스 오버 시 드랍다운css */
+
 	</style>
 </head>
 <body>
@@ -203,7 +228,7 @@
 	        <!-- 오픈캔버스 -->
 		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" 
 		style="background-color: #263343; border-color: #263343;">
-			<i class="fa-brands fa-artstation">RunDay</i>
+			<img src="../image/runday.png" style="height: 50px;">
 		</button>
 		
 		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: #263343;">
@@ -216,17 +241,15 @@
 			  <div class="menu">
 			  	 <ul>
 			        <li><a href="">
-			        	<i class="fa-solid fa-1">.통계</i>
+			        	<i class="fa-solid fa-1">.러닝기록보기</i>
 			        	</a>
 		        	</li>
 			        <li><a href="">
-			       <i class="fa-solid fa-2">.회원정보</i>
+			       <i class="fa-solid fa-2">.게시글보기</i>
 			       		</a>
 		       		</li>
-			        <li><a href=""><i class="fa-solid fa-3">.크루모집관리</i>
+			        <li><a href=""><i class="fa-solid fa-3">.코스추천관리</i>
 			        </a></li>
-			        <li><a href="">
-			        <i class="fa-solid fa-4">.게시판관리</i></a></li>
 			    </ul>
 			  </div>
 		  <div class="offcanvas-body">
@@ -236,19 +259,27 @@
 		</div>
 	</div>	  
 	    <ul class="navbar_icons">
+			<!--드롭다운 메뉴  -->
+			<li><a href="#">통계</a></li>
+			<li><a href="#">회원정보</a></li>
+			<li><a href="#">크루모집관리</a></li>
+			<li><a href="#">게시판 관리</a></li>
+		</ul>
+</div>				
     	</ul>
-		<!-- 부트스트랩  -->
+		<!-- 부트스트랩 my -->
 		<div class="canvus">
-		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">MY</button>
+		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">관리자</button>
 		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   		<div class="offcanvas-header">
    		 <h5 id="offcanvasRightLabel">
-   			 <h2><a href="#">내정보보기</a></h2>
-   		 	<h2><a href="#">로그아웃</a></h2>
+   			 <h2><a href="#"><i class="fa-solid fa-user-chef">관리자</i></a></h2>
    		 </h5>
    		 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   		</div>
   		<div class="offcanvas-body">
+  			<h2><a href="#">관리자 정보 보기</a></h2><br>
+  			<h2><a href="#">로그아웃</a></h2>
   		</div>
   		</nav>
  	 </div>
@@ -326,13 +357,8 @@
 		</table>
 	</div>
 	<!--리스트 -->
-<!-- 아코디언 시작  -->
-
-<!-- 아코디언 끝 -->
-
 	<div class="body">
 	<div class="list">
-	
  		<table class="type04">
 	 		<tr class=" trhead" style="background-color: #D8D8D8;">
 	 			<th width="40px">

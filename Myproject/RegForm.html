@@ -1,21 +1,24 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<meta charset="uTF-8">
-	<meta name="viewport" content="width=devide-width, initial=scale=1.0">
-	<title></title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-		  rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
- 		  crossorigin="anonymous">
-	<style>
-	@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
-	@font-face{
-	 font-family: abster;
-	 src:url(font/abster-webfont.woff) format('woff');
-	@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
-	}
-		  body{
+    <meta charset="uTF-8">
+    <meta name="viewport" content="width=devide-width, initial=scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+    @font-face{
+     font-family: abster;
+     src:url(font/abster-webfont.woff) format('woff');
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+    }
+        .wrap{
+            width:100%;
+            height: 100%;
+        }
+         body{
             margin:0;
         }
         a{
@@ -53,279 +56,415 @@
             list-style: none;
             color: white;
             display: flex;
-            padding-left: 0;    
+            justify-content: center;
+            align-items:center;
         }
+		 .navbar_icons li a{
+		 	margin-left: 40px;
+		 	font-size: 20px;
+		 	font-weight: bold;
+		 }
         .navbar_icons li{
             padding: 8px 12px;
         }
-@media screen and (max-width:768px){
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 24px;
-    }
-    .navbar_menu{
-        flex-direction: column;
-        align-items: center;
-        width:100%;    
-    }
-    .navbar_menu li{
-        width: 100%;
+        .user span{
+        font-size: 30px;
+        font-weight: bold;
+        }
+        .code{
+        margin-left: 400px;
+        }
+        .user{
         text-align: center;
-    }
-    .navbar_icons{
-        justify-content: center;
-        width:100%;
-    }
-}
-		.my{
-			margin-left: auto;
+        font-size: 13px;
+        }
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+            }
+                ul, li {
+            list-style: none;
+            }
+            a {
+            text-decoration: none;
+            color: inherit;
+            }        
+            .register{
+            width: 550px;
+            margin: 200px auto 0;
+            padding: 15px 20px;
+            background-color: white;
+            color: #2b2e4a;
+            font-size: 14px;
+            text-align: left;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            height: 630px;
+        }
+        .register h1{
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .register input{
+            width: 100%;
+            height: 40px;
+            outline: none;
+            padding: 10px;
+            border: 1px solid #707070;
+            transition: 0.3s;
+        }
+        .register input:valid, .register input:focus{
+            border: 1px solid #2b2e4a;
+        }
+        .register .center{
+            display: flex;
+            align-items: center;
+        }
+        .register .flex{
+            display: flex;
+            flex-direction: column;
+        }
+        .register .flex .container{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            margin-bottom: 10px;
+        }
+        .register .flex .container .item:first-child{
+           margin-right: 10px;
+        }
+        .register .flex .container .item .idcheck{
+            height: 100%;
+            margin-left: 10px;
+            padding: 5px 15px;
+            background: #2b2e4a;
+            border: 1px solid #2b2e4a;
+            color: white;
+            font-size: 12px;
+            transition: 0.3s;
+        }
+        .register .flex .container .item .idcheck:hover{
+            background: white;
+            color: #2b2e4a;
+        }
+        .register .flex .container .item select{
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #2b2e4a;
+        }
+        .register .submit{
+            width: 100%;
+            height: 40px;
+            color: white;
+            border: none;
+            border: 1px solid #2b2e4a;
+            background: #2b2e4a;
+            transition: 0.3s;
+        }
+        .register .flex .container:last-child{
+            margin: 0;
+        }
+        .register .submit:hover{
+            width: 100%;
+            height: 40px;
+            border: none;
+            border: 1px solid #2b2e4a;
+            color: #2b2e4a;
+            background: white;
+        }
+        input {
+            width: 500px;
+            height: 32px;
+            font-size: 15px;
+            border: 0;
+            border-radius: 15px;
+            outline: none;
+            padding-left: 10px;
+            background-color: #FAFAFA;
+            }
+         select{
+            appearance: none;
+            height: 42px;
+            }
+        .content{
+            width: 100%;
+            height: 920px;
+            display: flex;
+        }
+        .leftsidebar{
+            width:250px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #0B0B3B;;
+        }
+        .leftsidebar h1 a{
+        	color: white;
+        }
+         .leftsidebar
+        select{
+            border-radius: 15px;
+        }
+        .leftsidebar h1{
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 30px;           
+        }
+   		.menu ul li{
+			list-style: none;
+			margin-top: 150px;
+			}
+		.offcanvasRightLabel{
+		background-color: #424242;
 		}
-		.wrap{
-			width:100%;
-			height: 100%;
+		.offcanvas-body{
+		background-color: #263343;
 		}
-		/* 레지등록폼 */
-		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-	*{
-	  margin: 0;
-	  padding: 0;
-	  box-sizing: border-box;
-	  font-family: 'Poppins',sans-serif;
-	}
-	body{
-	  height: 100vh;
-	  display: flex;
-	  justify-content: center;
-	  align-items: center;
-	}
-	.container{
-	  max-width: 700px;
-	  width: 100%;
-	  background-color: #fff;
-	  padding: 25px 30px;
-	  border-radius: 5px;
-	  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-	}
-	.container .title{
-	  font-size: 25px;
-	  font-weight: 500;
-	  position: relative;
-	}
-	.container .title::before{
-	  content: "";
-	  position: absolute;
-	  left: 0;
-	  bottom: 0;
-	  height: 3px;
-	  width: 30px;
-	  border-radius: 5px;
-	}
-	.content form .user-details{
-	  display: flex;
-	  flex-wrap: wrap;
-	  justify-content: space-between;
-	  margin: 20px 0 12px 0;
-	}
-	form .user-details .input-box{
-	  margin-bottom: 15px;
-	  width: calc(100% / 2 - 20px);
-	}
-	form .input-box span.details{
-	  display: block;
-	  font-weight: 500;
-	  margin-bottom: 5px;
-	}
-	.user-details .input-box input{
-	  height: 45px;
-	  width: 100%;
-	  outline: none;
-	  font-size: 16px;
-	  border-radius: 5px;
-	  padding-left: 15px;
-	  border: 1px solid #ccc;
-	  border-bottom-width: 2px;
-	  transition: all 0.3s ease;
-	}
-	.user-details .input-box input:focus,
-	.user-details .input-box input:valid{
-	  border-color: #9b59b6;
-	}
-	 form .gender-details .gender-title{
-	  font-size: 20px;
-	  font-weight: 500;
-	 }
-	 form .category{
-	   display: flex;
-	   width: 80%;
-	   margin: 14px 0 ;
-	   justify-content: space-between;
-	 }
-	 form .category label{
-	   display: flex;
-	   align-items: center;
-	   cursor: pointer;
-	 }
-	 form .category label .dot{
-	  height: 18px;
-	  width: 18px;
-	  border-radius: 50%;
-	  margin-right: 10px;
-	  background: #d9d9d9;
-	  border: 5px solid transparent;
-	  transition: all 0.3s ease;
-	}
-	 #dot-1:checked ~ .category label .one,
-	 #dot-2:checked ~ .category label .two,
-	 #dot-3:checked ~ .category label .three{
-	   background: #9b59b6;
-	   border-color: #d9d9d9;
-	 }
-	 form input[type="radio"]{
-	   display: none;
-	 }
-	 form .button{
-	   height: 45px;
-	   margin: 35px 0
-	 }
-	 form .button input{
-	   height: 100%;
-	   width: 100%;
-	   border-radius: 5px;
-	   border: none;
-	   color: #fff;
-	   font-size: 18px;
-	   font-weight: 500;
-	   letter-spacing: 1px;
-	   cursor: pointer;
-	   transition: all 0.3s ease;
-	   background: linear-gradient(135deg, #71b7e6, #9b59b6);
-	 }
-	 form .button input:hover{
-	  /* transform: scale(0.99); */
-	  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
-	  }
-	 @media(max-width: 584px){
-	 .container{
-	  max-width: 100%;
-	}
-	form .user-details .input-box{
-	    margin-bottom: 15px;
-	    width: 100%;
-	  }
-	  form .category{
-	    width: 100%;
-	  }
-	  .content form .user-details{
-	    max-height: 300px;
-	    overflow-y: scroll;
-	  }
-	  .user-details::-webkit-scrollbar{
-	    width: 5px;
-	  }
-	  }
-	  @media(max-width: 459px){
-	  .container .content .category{
-	    flex-direction: column;
-	  }
-	}
-	  .container{
-	  	margin-top: 60px;
-	  }
-		</style>
-</head>
-<body>
-<div class="wrap">
-	<nav class="navbar">
-	    <div class="navbar_logo">
-	        <a href=""><i class="fa-brands fa-artstation">RunDay</i></a>
-	    </div>
-	    <ul class="navbar_menu">
-	        <li><a href="">통계</a></li>
-	        <li><a href="">회원정보</a></li>
-	        <li><a href="">크루모집관리</a></li>
-	        <li><a href="">게시판관리</a></li>
+		.offcanvas-body h2 a{
+		color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+		.offcanvas-body h2 a{
+		margin-top: 40px;
+		}
+		.offcanvas-header{
+		background-color: #424242;
+		color: white;
+		}
+		.code{
+		margin-left: 400px;
+		}
+		.user span{
+		font-size: 30px;
+		font-weight: bold;
+		}
+   </style>
+   </head>
+   <body>
+       <nav class="navbar">
+       <div class="navbar_logo">
+               <!-- 오픈캔버스 -->
+           <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"
+           style="background-color: #263343; border-color: #263343;">
+              <img src="../image/runday.png" style="height: 50px;">
+           </button>         
+           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: #263343;">
+                 <div class="offcanvas-header">
+                   <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                          <i class="fa-brands fa-vaadin">관리자 메뉴</i>
+                   </h5>
+                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                 </div>
+                 <div class="menu">
+                      <ul>
+                        <li><a href="">
+			        	<i class="fa-solid fa-1">.러닝기록보기</i>
+			        	</a>
+		        	</li>
+			        <li><a href="">
+			       <i class="fa-solid fa-2">.게시글보기</i>
+			       		</a>
+		       		</li>
+			        <li><a href=""><i class="fa-solid fa-3">.코스추천관리</i>
+			        </a></li>
+			        <li><a href="">
+			        <i class="fa-solid fa-4">.게시판관리</i></a></li>
+                   </ul>
+                 </div>
+             <div class="offcanvas-body">
+                   <div>                
+                   </div>
+             </div>
+           </div>
+       </div>  
+           <ul class="navbar_icons">
+			<li><a href="#">통계</a></li>
+			<li><a href="#">회원정보</a></li>
+			<li><a href="#">크루모집관리</a></li>
+			<li><a href="#">게시판 관리</a></li>
+    	</ul>
+           </ul>
+           <!-- 부트스트랩  -->
+           <div class="canvus">
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">관리자</button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">
+				<h2><a href="#">Manager</a></h2>
+                </h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+       		     <h2><a href="#">내정보보기</a></h2>
+                    <h2><a href="#">로그아웃</a></h2>
+              </div>
+              </nav>
+         </div>
+       </div>
+	<div class="code">
+		<ul class="nav nav-tabs">
+	  <li class="nav-item">
+	    <a class="nav-link active" aria-current="page" href="#">코드그룹관리</a>
+	  </li>
+	  <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">코드관리</a>
+	    <ul class="dropdown-menu">
+	      <li><a class="dropdown-item" href="#">코드그룹관리</a></li>
+	      <li><a class="dropdown-item" href="#">코드관리</a></li>
+	      <li><a class="dropdown-item" href="#">회원관리</a></li>
+	      <li><hr class="dropdown-divider"></li>
+	      <li><a class="dropdown-item" href="#">Separated link</a></li>
 	    </ul>
-	    <ul class="navbar_icons">
-		<!--부트스트랩  -->
-		<div class="canvus navbar_icons">
-			<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">MY</button>
-			<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-	  		<div class="offcanvas-header">
-	   		 <h5 id="offcanvasRightLabel">
-	   			 <h2><a href="#">내정보보기</a></h2>
-	   		 	<h2><a href="#">로그아웃</a></h2>
-	   		 </h5>
-	   		 <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-	  		</div>
-	  		<div class="offcanvas-body">
-	  		</div>
-	  		</div>
-		</div>	
-	</nav>
-	<div class="">
-	<!--레지 등록폼  -->
-	<div class="container">
-	    <div class="title">회원등록</div>
-	    <div class="content">
-	      <form action="#">
-	        <div class="user-details">
-	          <div class="input-box">
-	            <span class="details">이름</span>
-	            <input type="text" placeholder="Enter your name" required>
-	          </div>
-	          <div class="input-box">
-	            <span class="details">이메일</span>
-	            <input type="text" placeholder="Enter your e-mail" required>
-	          </div>
-	          <div class="input-box">
-	            <span class="details">전화번호</span>
-	            <input type="text" placeholder="Enter your number" required>
-	          </div>
-	          <div class="input-box">
-	            <span class="details">회원주소</span>
-	            <input type="text" placeholder="Enter your address" required>
-	          </div>
-	          <div class="input-box">
-	            <span class="details">가입일</span>
-	            <input type="text"  required>
-	          </div>
-	          <div class="input-box">
-	            <span class="details">최근접속일</span>
-	            <input type="text" required>
-	          </div>
-   	          <div class="input-box">
-	            <span class="details">회원등급</span>
-	            <input type="text" required>
-	          </div>
-	        </div>
-	        <div class="gender-details">
-	          <input type="radio" name="gender" id="dot-1">
-	          <input type="radio" name="gender" id="dot-2">
-	          <input type="radio" name="gender" id="dot-3">
-	          <span class="gender-title">성별</span>
-	          <div class="category">
-	            <label for="dot-1">
-	            <span class="dot one"></span>
-	            <span class="gender">남자</span>
-	          	</label>
-	          	<label for="dot-2">
-	            <span class="dot two"></span>
-	            <span class="gender">여자</span>
-	         	 </label>
-	          </div>
-	        </div>
-	        <div class="button">
-	          <input type="submit" value="Register">
-	        </div>
-	      </form>
-	    </div>
-	  </div>
-</div>
-
-
- <script src="https://kit.fontawesome.com/0e2ca97461.js" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
- </script>
-</body>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">회원관리</a>
+	  </li>
+	</ul>
+	</div>
+<!--부트스트랩 end  -->
+<div class="user">
+		<span style="background-color: #263343;; color: white;">
+			<i class="fa-solid fa-list-check">회원정보</i>
+		</span>
+	</div>
+		<!--부트스트랩 end  -->
+              <div class="register" style="margin-top: 50px; margin-left: 700px;">
+                  <h1>유저정보</h1>
+                  <form action="">
+                      <div class="flex">
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-mars-and-venus">성별</i>
+                              </li>
+                              <li class="item">
+                                  <select name="gender">
+                                      <option value="선택" selected>선택</option>
+                                      <option value="남성">남성</option>
+                                      <option value="여성">여성</option>
+                                  </select>
+                              </li>
+                              <li class="item">                          
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-ellipsis-vertical">회원번호</i>
+                              </li>
+                              <li class="item">
+                                  <input type="text" name="usernumber">
+                              </li>
+                              <li class="item">                    
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-user">이름</i>
+                              </li>
+                              <li class="item">
+                                  <input type="text" name="name" placeholder="이름을 입력하세요.">
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-envelope">이메일</i>
+                              </li>
+                              <li class="item">
+                                  <input type="text" name="email" placeholder="이메일을 입력하세요.">
+                              </li>
+                              <li class="item">
+                                 
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-mobile">전화번호</i>
+                              </li>
+                              <li class="item">
+                                  <input type="text" name="tel_number" placeholder="전화번호를 입력하세요." \>
+                              </li>
+                              <li class="item">                          
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-address-card">회원주소</i>
+                              </li>
+                              <li class="item">
+                                  <input type="text" name="address" placeholder="회원주소를 입력하세요">
+                              </li>
+                              <li class="item">
+                                 
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-mobile">전화번호</i>  
+                              </li>
+                              <li class="item">
+                                  <input type="text" placeholder="휴대전화번호">
+                              </li>
+                              <li class="item">                      
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-calendar">가입일</i>
+                              </li>
+                              <li class="item">
+                                  <input type="date" name="date" >
+                              </li>
+                              <li class="item">                      
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-calendar-check">최근접속일</i>
+                              </li>
+                              <li class="item">
+                                  <input type="date" name="last">
+                              </li>
+                              <li class="item">                            
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">
+                                  <i class="fa-solid fa-gem">회원등급</i>
+                              </li>
+                                  <select>
+                                  	<option vlaue="choice">선택</option>
+                                  	<option vlaue="bronze">브론즈</option>
+                                  	<option vlaue="silver">실버</option>
+                                  	<option vlaue="gold">골드</option>
+                                  	<option vlaue="platinum">플레티넘</option>
+                                  </select>
+                              </li>
+                              <li class="item">                                
+                              </li>
+                          </ul>
+                          <ul class="container">
+                              <li class="item center">                                    
+                              </li>
+                              <li class="item">
+                                  <button class="submit">등록하기</button>
+                              </li>
+                              <li class="item">                      
+                              </li>
+                          </ul>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </script>
+      <script src="https://kit.fontawesome.com/0e2ca97461.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+     </script>
+     </script>    
+    </body>
+    </html>
