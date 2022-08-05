@@ -33,6 +33,7 @@
         align-items: center;
         line-height: 10px;
         padding-bottom: 10px;
+        margin-top: 90px;
     }
     .switch-button {
         position: relative;
@@ -96,6 +97,10 @@
         width: 100%;
         height: 10px;  
     }
+    hr{
+    	width: 22%;
+    	margin:0 auto;
+    }
     .link{
         display: flex;
         flex-direction: column;
@@ -124,19 +129,28 @@
     h4{
         margin-right: 227px;
     }
+    .link button{
+    	color:white;
+    }
+    .logo p{
+    	font-size: 30px;
+    	font-weight: bold;
+    }
     </style>
 </head>
 <body>
 <div class="wrap">
     <div class="logo">
-        <h1>Runday</h1>
+        <p>YOUR</p>
+        <p>COMPANY</p>
+        <p>LOGO</p>
     </div>
     <div class="login">
         <div class="id">
-            <p><input type="text"></p>
+            <p><input type="text" placeholder="ID"></p>
         </div>
         <div class="pw">
-            <p><input type="password"></p>
+            <p><input type="password" placeholder="Password"></p>
         </div>
         <div class="toggle">
             <label class="switch-button">
@@ -158,8 +172,8 @@
         <hr>
     </div>
     <div class="link">
-        <button type="button" style="background-color: #fee102;;">Kakao</button>
-        <button type="button" style="background-color: #19ce60;">Naver</button>
+    	<button type="button" style="background-color: #19ce60;">Naver</button>
+        <button type="button" style="background-color: #fee102; color: black;" >Kakao</button>
         <button type="button" style="background-color: red;">Google</button>
         <button type="button" style="background-color: #3578e5;">Facebook</button>
     </div>  
@@ -169,3 +183,4 @@
   integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
  </script>
 </body>
+</html>
